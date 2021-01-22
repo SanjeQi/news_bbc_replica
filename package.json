@@ -1,0 +1,22 @@
+{
+  "name": "news_bbc_replica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w dist/scss -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanjeQi/news_bbc_replica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SanjeQi/news_bbc_replica/issues"
+  },
+  "homepage": "https://github.com/SanjeQi/news_bbc_replica#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
