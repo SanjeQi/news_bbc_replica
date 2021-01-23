@@ -1,4 +1,87 @@
-$color: green;
-body {
-  background-color: $color;
+@import 'variables';
+@import 'utilities';
+
+//General
+* {
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6rem;
+  background-color: $main_color;
+}
+a {
+  text-decoration: none;
+  color: $link_color_dark;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+p,
+i {
+  padding: 0;
+  margin: 0;
+}
+
+// Navbar A
+
+#nav_a {
+  display: flex;
+  justify-content: space-around;
+
+  & ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    & li a {
+      padding: 1.3rem 1.2rem 1rem 1.2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border-right: 0.3px solid #ccc;
+    }
+
+    & li i {
+      padding: 0.6rem 1rem;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: #b4b4b4;
+    }
+  }
+  //Logo
+  & p img {
+    height: 30px;
+    width: 90px;
+
+    margin-top: 0.4rem;
+  }
+  // Sign in
+  .sign_in {
+    display: flex;
+
+    padding-left: 1rem;
+    padding-right: 3rem;
+
+    border-right: 0.3px solid #ccc;
+    border-left: 0.3px solid #ccc;
+    & i {
+      size: 0.8rem;
+      padding: 0.6rem 0.4rem;
+    }
+    & h4 {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding-top: 0.3rem;
+    }
+  }
+}
+
+//Search top
