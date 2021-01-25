@@ -17,13 +17,19 @@
     <header id="header">
       <div class="container">
         <nav id="nav_a">
-          <p><img src="logo/bbc.JPG" alt="logo" class="logo" /></p>
+          <div class="logo">
+            <img src="logo/bbc.JPG" alt="logo" />
+          </div>
           <div class="sign_in">
             <i class="fas fa-user-circle"></i>
             <h4>Sign in</h4>
           </div>
+          <div class="bell">
+            <a>
+              <i class="fas fa-bell fa-2x"></i>
+            </a>
+          </div>
           <ul>
-            <li><i class="fas fa-bell bell"></i></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Sport</a></li>
@@ -33,11 +39,37 @@
             <li><a href="#">CBBC</a></li>
             <li><a href="#">More</a></li>
             <li>
-              <input id="search" type="text" placeholder="Search" />
-              <i class="fas fa-search"></i>
+              <input class="search_input" type="text" placeholder="Search" />
+              <a href="#" class="btn-light">
+                <i class="fas fa-search search_icon"></i
+              ></a>
             </li>
           </ul>
         </nav>
+      </div>
+      <div id="nav_b">
+        <div class="container">
+          <div class="news_list">
+            <h3 class="lead">NEWS</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Brexit</a></li>
+              <li><a href="#">Coronavirus</a></li>
+              <li><a href="#">UK</a></li>
+              <li><a href="#">World</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Politics</a></li>
+              <li><a href="#">Tech</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Health</a></li>
+              <li><a href="#">Family Education</a></li>
+              <li><a href="#">Entertainments Arts</a></li>
+              <li><a href="#">Stories</a></li>
+              <li><a href="#">In Pictures</a></li>
+              <li><a href="#">More</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
   </body>
