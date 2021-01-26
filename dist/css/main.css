@@ -28,9 +28,6 @@ i {
   padding: 0;
   margin: 0; }
 
-#header {
-  border-bottom: 0.3px solid #ccc; }
-
 #nav_a {
   display: flex;
   justify-content: space-around;
@@ -51,7 +48,7 @@ i {
       zoom: 1.2; }
     #nav_a .sign_in h4 {
       text-align: center;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       font-weight: bold;
       padding-top: 0.5rem; }
   #nav_a .bell {
@@ -67,7 +64,7 @@ i {
     justify-content: space-evenly; }
     #nav_a ul a {
       text-align: center;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       font-weight: bold; }
     #nav_a ul i {
       padding: 0.6rem 1rem;
@@ -105,7 +102,7 @@ i {
     display: flex;
     flex-direction: column; }
     #nav_b .news_list h3 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: normal;
       color: #fff;
       padding: 1rem; }
@@ -114,8 +111,32 @@ i {
       flex-direction: row;
       justify-content: space-between;
       align-items: center; }
-      #nav_b .news_list ul li a {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 0.8rem;
-        color: #fff;
-        padding: 1rem; }
+      #nav_b .news_list ul li {
+        border-bottom: 6px solid transparent; }
+        #nav_b .news_list ul li a {
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 0.85rem;
+          color: #fff; }
+          #nav_b .news_list ul li a span {
+            padding: 0 0.9rem;
+            border-right: 0.01px solid #bb454f; }
+        #nav_b .news_list ul li:last-child a span {
+          border-right: none; }
+      #nav_b .news_list ul li:hover {
+        border-bottom: 6px solid #fff; }
+
+#nav_c .news_location ul {
+  display: flex; }
+  #nav_c .news_location ul li {
+    border-bottom: 6px solid transparent; }
+    #nav_c .news_location ul li a {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 0.85rem;
+      color: #1e1e1e; }
+      #nav_c .news_location ul li a span {
+        padding: 0 1rem;
+        border-right: 0.01px solid #dcdcdc; }
+    #nav_c .news_location ul li:last-child a span {
+      border-right: none; }
+  #nav_c .news_location ul li:hover {
+    border-bottom: 4px solid #bb454f; }
