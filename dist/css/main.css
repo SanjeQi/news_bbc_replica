@@ -4,9 +4,18 @@
   margin: auto;
   overflow: hidden; }
 
+.card_long {
+  max-width: 255px;
+  overflow: hidden; }
+
+.card_medium {
+  max-width: 255px;
+  overflow: hidden; }
+
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
