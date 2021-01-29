@@ -172,7 +172,7 @@ i {
 
 // ---Ending ------------------------------   Navbar B
 
-// ****************************************   Navbar c
+// ****************************************   Navbar C
 #nav_c {
   .news_location ul {
     display: flex;
@@ -205,16 +205,39 @@ i {
 .news_flow_cards {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 0.5rem;
-  height: 40rem;
+  grid-gap: 0.8rem;
+  height: 44rem;
   .card {
-    // border: 1px solid #ccc;
-    background-color: #f4f4f4;
-
     &_1 {
       grid-row: 1 / span 3;
       display: grid;
-      img {
+      div {
+        img {
+          width: 40%;
+        }
+        h3 a {
+          font-size: 1.9rem;
+          color: rgb(104, 104, 104);
+          line-height: normal;
+        }
+        a:hover {
+          color: #1380a1;
+          text-decoration: underline;
+        }
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      .bullet_points {
+        list-style: inside;
+        a {
+          font-weight: bold;
+          font-size: 0.86rem;
+        }
+      }
+      .bullet_points a:hover {
+        color: #1380a1;
+        text-decoration: underline;
       }
     }
     &_2 {
@@ -223,9 +246,28 @@ i {
     }
     &_3 {
       grid-row: 1 / span 3;
+      a:hover {
+        color: #1380a1;
+        text-decoration: underline;
+      }
+      h4 a {
+      }
+      p {
+        font-size: 0.9rem;
+      }
     }
     &_4 {
       grid-row: 1 / span 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      div {
+        margin-bottom: 0.2rem;
+        border-bottom: 1px dotted #ccc;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
     }
     &_5 {
       grid-column: auto;
